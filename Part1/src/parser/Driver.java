@@ -1,5 +1,6 @@
 package parser;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
@@ -17,7 +18,7 @@ public class Driver {
         FileInputStream in = null;
         
         try {
-            in = new FileInputStream("C:\\tpProgAssign\\Part1\\src\\parser\\jsondatabase.properties");
+            in = new FileInputStream("/home/ubuntu/tpProgAssign/Part1/src/parser/jsondatabase.properties");
             props.load(in);
 
         } catch (IOException ex) {
